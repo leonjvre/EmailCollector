@@ -1,7 +1,7 @@
 <?php
 define('DB_HOST', 'localhost');
 define('DB_USER', 'CollectionAdmin');
-define('DB_PASS', 'StrongP@ss989');
+define('DB_PASS', 'EmailData134911');
 define('DB_NAME', 'EmailCollectorMaster');
 
 // Create connection
