@@ -32,7 +32,9 @@ include 'models/emailitem.php';
                 <?php endif; ?>
         <?php endforeach; ?>
 <?php endif; ?>
+        </table>
 
+<?php include 'includes/footer.php'; ?>
 
 
 
