@@ -8,9 +8,10 @@ include 'models/emailitem.php';
 $name = $email = $message = $mobile = $SaveMessage = '';
 $nameErr = $emailErr = $mobileErr = $messageErr = $SaveError = '';
 
+
 //Form Submit 
 if (isset($_POST['submit'])) {
-
+try {
     //Run the validation rules
      // Validate name
         if (empty($_POST['name'])) {
@@ -55,7 +56,12 @@ if (isset($_POST['submit'])) {
                 $SaveError = $SaveMessage;
             }
         }
+      }
+      catch (Exception $e) {
+        $SaveError = 'Something went wrong. Please try again';
 }
+}
+
 ?>
 
 <h2>Collect new Email Address</h2>
